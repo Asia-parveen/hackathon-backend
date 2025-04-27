@@ -18,6 +18,7 @@ app.use(
 	cors({
 		origin: ['http://localhost:5174',
 			 'http://localhost:5173',
+       'https://hackathonfrontendmern.vercel.app/taskboard'
             
 			
 			
@@ -44,6 +45,3 @@ app.listen(port, () => {
   console.log(`✅ Server is live on port ${port}`);
 });
 
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`)
-// })
