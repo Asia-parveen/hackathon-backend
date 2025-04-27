@@ -29,17 +29,20 @@ app.use(
 );
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.get("/", (req, res) => {
+  res.send("✅ Backend is live and working!");
+});
 
 app.use("/api/auth", authRoutes);
 app.use('/api/tasks', taskRoutes);
 
 
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`✅ Server is live on port ${port}`);
+});
 
 // app.listen(port, () => {
 //   console.log(`Example app listening on port ${port}`)
